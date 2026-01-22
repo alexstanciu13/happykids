@@ -1,0 +1,74 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-heading: var(--font-outfit);
+
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+
+  --color-border: var(--border);
+}
+
+:root {
+  /* Happy Kids Palette - Warm, Premium, Beige/Cream/Gold */
+  --background: #fdfbf7; /* Very light warm cream */
+  --foreground: #4a4a4a; /* Soft dark grey for text */
+
+  --primary: #cba171; /* Gold/Beige main brand color */
+  --primary-foreground: #ffffff;
+
+  --secondary: #f2efe9; /* Light beige for backgrounds/cards */
+  --secondary-foreground: #4a4a4a;
+
+  --accent: #d4af37; /* Rich Gold for highlights */
+  --accent-foreground: #ffffff;
+
+  --muted: #e6e2da; /* Muted beige for borders/dividers */
+  --muted-foreground: #8c8c8c;
+
+  --border: #e6e2da;
+  
+  --radius: 0.5rem;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading), sans-serif;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+/* Custom Scrollbar for premium feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--muted);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary);
+}
